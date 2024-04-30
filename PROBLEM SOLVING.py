@@ -184,3 +184,34 @@ def sum_of_abs_diff(arr):
 
 # print(sum_of_abs_diff([1,4,6,8,10]))
 
+def Merge_two_sorted_arr(arr1,arr2):
+
+    len_arr1 = len(arr1)
+    len_arr2 = len(arr2)
+
+    newlist = sorted(arr1 + arr2)
+    return newlist[:len_arr1], newlist[len_arr1:]
+
+# print(Merge_two_sorted_arr([1,5,9,10,15,20],[2,3,8,13]))
+
+def Find_median(arr):
+    
+    if len(arr)%2 ==0:
+        
+        n = len(arr)//2
+        result = (arr[n-1]+arr[n])//2
+        return result 
+
+    elif len(arr)%2==1:
+        return arr[len(arr)//2]
+
+# print(Find_median([ 1,2,3,4,5,6,7]))
+
+def reverseString(string:str):
+
+    result = ""
+    for i in string:
+        result = i+result
+    return result
+
+# print(reverseString("Python"))

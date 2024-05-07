@@ -215,3 +215,23 @@ def reverseString(string:str):
     return result
 
 # print(reverseString("Python"))
+
+def factorial1(num:int):
+    
+    value = 1
+    for i in range(1, num+1):
+        value*=i
+    return value
+
+# print(factorial1(5))
+
+def factorial2(num:int):
+    
+    value = 1
+    while num>1:
+        value = value* num
+        num = num-1
+    return value
+    
+
+print(factorial2(0))

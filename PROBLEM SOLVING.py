@@ -233,5 +233,14 @@ def factorial2(num:int):
         num = num-1
     return value
     
+# print(factorial2(0))
 
-print(factorial2(0))
+def SquareStart(star:int):
+
+    for _ in range(star):
+        for _ in range(star):
+            print("*", end="")
+        print()
+
+# print(SquareStart(4))
+
